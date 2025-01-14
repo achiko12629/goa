@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA&display=swap');
+
+
+body {
+    font-family:"Playwrite AU SA", serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    font-family: "Playwrite AU SA", serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: "Playwrite AU SA", serif;
+    font-weight: 600;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+p {
+    font-weight: 400;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+}
+
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:hover {
+    color: #007BFF;
+}
