@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+/* წითელი კუბიკი, რომელსაც თითოეულ კუთხეს სხვადასხვა border-radius აქვს */
+.red-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 70px;
+}
+/* სურათის სტილიზაცია */
+.styled-image {
+    display: block;
+    width: 300px;
+    padding: 20px; /* Padding - შიდა დაშორება ელემენტის საზღვრიდან შიგნით */
+    border: 5px solid #000; /* Border - ელემენტის საზღვარი */
+    margin: 30px auto; /* Margin - გარე დაშორება, ელემენტის ცენტრში გადასატანად */
+    background-color: white;
+}
