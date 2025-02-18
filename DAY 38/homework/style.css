@@ -1,0 +1,61 @@
+
+.cube-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin: 20px;
+}
+.cube {
+    width: 100px;
+    height: 100px;
+}
+.cube1 { background-color: rgb(15, 92, 95); }
+.cube2 { background-color: blue; }
+.cube3 { background-color: rgb(199, 3, 192); }
+.cube4 { background-color: rgb(213, 123, 32); }
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+.vertical-div {
+    height: 50px;
+    background-color: lightcoral;
+}
+
+.wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+.wrap-paragraph {
+    width: 200px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.shrink-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+.shrink-paragraph {
+    flex-shrink: 1;
+    width: 150px;
+    background-color: lightgreen;
+    margin: 5px;
+}
+
+.grow-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+.grow-paragraph {
+    flex-grow: 1;
+    background-color: lightpink;
+    margin: 5px;
+}
