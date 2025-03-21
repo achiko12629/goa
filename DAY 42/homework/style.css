@@ -1,0 +1,52 @@
+body {
+    background-image: url('download.jfif'); /* ჩასვით თქვენი სურათის ბმული */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+}
+
+/* 2. სათაური div-ის შიგნით */
+.container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 3. სტატიკური სურათი ჩამოსქროლვისას */
+.fixed-image {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* 4. ცენტრში განლაგებული div */
+.centered-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 5. div-ში ფონის სურათი ცენტრში */
+.centered-div {
+    background-image: url('download.jfif'); 
+    background-size: cover;
+    background-position: center;
+}
