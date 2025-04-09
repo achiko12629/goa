@@ -1,0 +1,27 @@
+.box {
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    transition: 0.5s;
+    display: inline-block;
+  }
+  #moveLeft:active {
+    transform: translateX(-50px);
+  }
+  #scaleBox:active {
+    transform: scale(1.5);
+  }
+  #moveDiagonal:active {
+    transform: translate(50px, 50px);
+  }
+  #rotateBox:active {
+    transform: rotate(-90deg);
+  }
+  #comboBox:active {
+    transform: translateX(50px) rotate(25deg) scale(4);
+  }
+  #moveLeft { background: #f88; }
+  #scaleBox { background: #8cf; }
+  #moveDiagonal { background: #fc6; }
+  #rotateBox { background: #c9f; }
+  #comboBox { background: #0cc; }

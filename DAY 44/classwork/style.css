@@ -1,0 +1,48 @@
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #333;
+}
+.move {
+    transform: translate(50px, 50px);
+}
+.move-back {
+    transform: translate(-50px, -50px);
+}
+.enlarge {
+    transform: scale(1.5);
+}
+.shrink {
+    transform: scale(0.5);
+}
+.widen {
+    transform: scaleX(1.5);
+}
+.tall {
+    transform: scaleY(1.5);
+}
+.turn {
+    transform: rotate(45deg);
+}
+.turn-back {
+    transform: rotate(-45deg);
+}
+.mix {
+    transform: translate(30px, 30px) scale(1.2) rotate(30deg);
+}

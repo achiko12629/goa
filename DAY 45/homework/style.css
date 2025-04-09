@@ -1,0 +1,53 @@
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  .color-animation {
+    background: red;
+    animation: colorChange 2s forwards;
+  }
+  @keyframes colorChange {
+    to { background: blue; }
+  }
+
+  .ball {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { top: 0; }
+    50% { top: 80px; }
+  }
+
+  .rotate-box {
+    background: orange;
+    animation: spin 2s infinite linear;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .color-text {
+    font-size: 20px;
+    animation: textColor 2s infinite alternate;
+  }
+  @keyframes textColor {
+    from { color: black; }
+    to { color: red; }
+  }
+
+  .scale-box {
+    background: green;
+    animation: growShrink 3s infinite;
+  }
+  @keyframes growShrink {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(0.5); }
+  }
