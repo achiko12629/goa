@@ -1,0 +1,93 @@
+<!-- 1 -->
+<div class="color-change"></div>
+
+<style>
+.color-change {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation: changeColor 2s forwards;
+}
+
+@keyframes changeColor {
+  to {
+    background-color: blue;
+  }
+}
+</style>
+<!-- 2 -->
+<div class="bouncing-ball"></div>
+
+<style>
+.bouncing-ball {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%   { top: 0; }
+  50%  { top: 100px; }
+  100% { top: 0; }
+}
+</style>
+<!-- 3 -->
+<div class="rotate-box"></div>
+
+<style>
+.rotate-box {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  animation: rotateBox 2s linear forwards;
+}
+
+@keyframes rotateBox {
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+<!-- 4 -->
+<h1 class="color-text">გამარჯობა!</h1>
+
+<style>
+.color-text {
+  animation: textColor 3s infinite alternate;
+}
+
+@keyframes textColor {
+  from {
+    color: black;
+  }
+  to {
+    color: red;
+  }
+}
+</style>
+<!-- 5 -->
+<div class="scale-box"></div>
+
+<style>
+.scale-box {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  animation: scaleBox 3s forwards;
+}
+
+@keyframes scaleBox {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+</style>
