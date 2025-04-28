@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ფოტოების მანიპულაცია</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    img {
+      margin: 10px;
+      border: 2px solid #333;
+      transition: all 0.3s ease;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>საიტი</h1>
+
+  <div>
+    <img id="photo1" src="" alt="ფოტო 1" width="200">
+    <img id="photo2" src="" alt="ფოტო 2" width="200">
+  </div>
+
+  <div>
+    <button onclick="showAlert()">გამაფრთხილებელი მესიჯი</button>
+    <button onclick="resizePhoto1()">პირველი ფოტოს ზომის შეცვლა</button>
+    <button onclick="resizePhoto2()">მეორე ფოტოს ზომის შეცვლა</button>
+    <button onclick="changePhoto1()">პირველი ფოტოს შეცვლა</button>
+    <button onclick="changePhoto2()">მეორე ფოტოს შეცვლა</button>
+    <button onclick="changeButtonBackground()">ღილაკის ფონის შეცვლა</button>
+  </div>
+
+  <script>
+    function showAlert() {
+      alert('გთხოვთ, ყურადღება მიაქციოთ!');
+    }
+
+    function resizePhoto1() {
+      const photo = document.getElementById('photo1');
+      photo.width = photo.width === 200 ? 300 : 200; // თუ იყო 200px -> 300px, თუ იყო 300px -> 200px
+    }
+
+    function resizePhoto2() {
+      const photo = document.getElementById('photo2');
+      photo.width = photo.width === 200 ? 300 : 200;
+    }
+
+    function changePhoto1() {
+      const photo = document.getElementById('photo1');
+      photo.src = '';
+    }
+
+    function changePhoto2() {
+      const photo = document.getElementById('photo2');
+      photo.src = '';
+    }
+
+    function changeButtonBackground() {
+      const buttons = document.querySelectorAll('button');
+      const randomIndex = Math.floor(Math.random() * buttons.length);
+      buttons[randomIndex].classList.toggle('highlight');
+    }
+  </script>
+
+</body>
+</html>
