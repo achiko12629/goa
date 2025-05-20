@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ტესტ საიტი</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #f6d365, #fda085);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 5px #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      background-color: #ffffffaa;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>გამარჯობა საიტიდან!</h1>
+
+  <button onclick="alert('პირველი ღილაკი დაჭერილია!')">დაჭირე მე</button>
+  <button onclick="alert('მეორე ღილაკი დაჭერილია!')">და მე!</button>
+
+  <script>
+    // 4 ცვლადი, მათ შორის boolean
+    let სახელი = "გიორგი";
+    let ასაკი = 25;
+    let სტუდენტია = true;
+    let ქულა = 98.5;
+
+    // გამოყვანა კონსოლში
+    console.log("სახელი:", სახელი);
+    console.log("ასაკი:", ასაკი);
+    console.log("სტუდენტია:", სტუდენტია);
+    console.log("ქულა:", ქულა);
+
+    // შეერთება
+    let შეერთებული = სახელი + " " + ასაკი + " " + სტუდენტია + " " + ქულა;
+    console.log("შეერთებული ცვლადები:", შეერთებული);
+  </script>
+</body>
+</html>
